@@ -1,0 +1,20 @@
+#burgerImg {
+  width: 400px;
+  text-align: center;
+}
+
+body {
+  background-color: #f07c21!important;
+}
+
+ul, li, input {
+  background-color: #f0c821!important;
+}
+
+h1, h3 {
+  color: #643319;
+}
+
+.form-control{
+  width: 300px!important;
+}
