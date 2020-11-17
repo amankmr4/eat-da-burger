@@ -1,15 +1,15 @@
-<h1>Welcome to Eat-Da-Burger</h1>
-<img>
+<h1 class="text-center">Welcome to Eat-Da-Burger</h1>
 
+<img src="/assets/img/burger.png" alt="burger-image" class="rounded mx-auto d-block">
 <main>
     <div class="container">
         <div class="row">
             <div class="col-sm-5">
                 <h3>Burgers Still Devour</h3>
-                <ul>
+                <ul class="list-group list-group-flush">
                     {{#each burgers}}
                     {{#unless devoured}}
-                    <li>
+                    <li class="list-group-item list-group-item-info">
                         {{burger_name}}
                         <button class="devoured-btn" data-id="{{this.id}}" data-devoured="{{this.devoured}}">
                             Devour
@@ -20,23 +20,24 @@
                 </ul>
             </div>
 
-            <div>
 
-            </div class="col-sm-5">
-            Burgers Yet To Devour
-            <ul>
-                {{#each burgers}}
-                {{#if this.devoured}}
-                <li>
-                    {{burger_name}}
-                </li>
-                {{/if}}
-                {{/each}}
-            </ul>
 
+            <div class="col-sm-5">
+                Burgers Yet To Devour
+                <ul class="list-group list-group-flush">
+                    {{#each burgers}}
+                    {{#if this.devoured}}
+                    <li class="list-group-item list-group-item-info">
+                        {{burger_name}}
+                    </li>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+
+            </div>
         </div>
-        <div class="row">
-            <div class="col-sm">
+        <div class="row text-center">
+            <div class="col-sm mt-5">
                 <h3>Add a burger</h3>
                 <form class="create-form">
                     <div class="form-group">
@@ -48,10 +49,8 @@
             </div>
         </div>
 
-    </div>
+
     </div>
 
 
 </main>
-
-</form>
